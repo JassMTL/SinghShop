@@ -61,7 +61,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="72dp"
-        android:text="Thank You For Your Visiting Hell"
+        android:text="Thank You For Your Visiting SikhAccesories"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

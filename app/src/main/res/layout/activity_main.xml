@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFB6C1"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/WelcomeMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Welcome to Hell!"
+        android:text="Welcome to SikhAccesories"
         android:textAlignment="center"
+        android:textColor="@android:color/white"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
@@ -28,8 +30,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="basic Intructions for the menu activity"
+        android:text="We specilize in Accesories that sikhs use on a daily basis"
         android:textAlignment="center"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/menuLink"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,8 +48,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="100dp"
-        android:text="MENUpAGE
-"
+        android:text="Start Shopping"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
