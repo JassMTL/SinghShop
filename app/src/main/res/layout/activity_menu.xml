@@ -18,8 +18,8 @@
     <!--app:layout_constraintTop_toTopOf="parent">-->
 
     <android.support.v7.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="511dp"
+        android:layout_width="340dp"
+        android:layout_height="500dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
@@ -29,9 +29,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <include
-            layout="@layout/card1_content"
-            <!--android:layout_width="300dp"-->
-            <!--android:layout_height="398dp" />-->
+        layout="@layout/card1_content" />
     </android.support.v7.widget.CardView>
 
     <!--<android.support.v7.widget.CardView-->
