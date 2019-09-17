@@ -6,38 +6,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
     android:background="#F0F0F0">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/decreaseKarraButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
             android:layout_marginBottom="12dp"
             android:background="@android:color/white"
-            android:text="-"
+            android:text="@string/minus"
             android:textAlignment="center"
             android:textSize="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/increaseKarraButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="44dp"
             android:layout_marginBottom="12dp"
             android:background="@android:color/white"
-            android:text="+"
+            android:text="@string/plus"
             android:textAlignment="center"
             android:textSize="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageKarra"
             android:layout_width="308dp"
             android:layout_height="215dp"
             android:layout_marginStart="8dp"
@@ -46,11 +44,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/priceKarra"
             app:srcCompat="@drawable/kirpan" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/amountKarra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -58,25 +56,25 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="12dp"
             android:background="@android:color/white"
-            android:text="0"
+            android:text="@string/zero"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/increaseKarraButton"
             app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toEndOf="@+id/button"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintStart_toEndOf="@+id/decreaseKarraButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageKarra" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/nameKarra"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
             android:background="@android:color/white"
-            android:text="Kirpan"
+            android:text="@string/kirpan"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="50sp"
@@ -86,20 +84,20 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/priceKarra"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:background="@android:color/white"
-            android:text="$99.99"
+            android:text="@string/priceKirpanStr"
             android:textColor="@android:color/black"
             android:textSize="50sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/nameKarra" />
 
 
-    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
