@@ -22,4 +22,7 @@
     <string name="checkout">Checkout</string>
     <string name="defaultNum">0</string>
     <string name="descKarra">Karra is the Punjabi word for a metal bangle worn by Sikh males and females. Sarblow is a word that mean full metal</string>
+    <string name="totalStr">Total:</string>
+    <string name="subtotalStr">Subtotal:</string>
+    <string name="descriptionKarra">Kirpan is a small dagger worn by baptised Sikh men and women. This particle kirpan is personized with a matt black finish.</string>
 </resources>
