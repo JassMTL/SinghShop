@@ -83,5 +83,6 @@
         android:layout_weight="0"
         android:background="@android:drawable/btn_default"
         android:text="@string/proceed_to_checkout"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:onClick="checkout"/>
 </LinearLayout>

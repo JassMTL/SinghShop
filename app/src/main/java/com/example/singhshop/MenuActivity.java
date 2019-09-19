@@ -1,5 +1,6 @@
 package com.example.singhshop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -71,5 +72,10 @@ public class MenuActivity extends AppCompatActivity {
             showPendantCount.setText(Integer.toString(pendantCount));
             subtotal -= pricePendant;
         }
+    }
+
+    public void checkout(View view) {
+        Intent intent = new Intent(this, CheckoutActivity.class);
+        startActivity(intent);
     }
 }
