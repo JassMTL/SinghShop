@@ -21,10 +21,18 @@ public class MenuActivity extends AppCompatActivity {
     private TextView showKarraCount;
     private TextView showKirpanCount;
     private TextView showPendantCount;
+
+    private TextView showKarraSubtotal;
+    private TextView showKirpanSubtotal;
+    private TextView showPendantSubtotal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        showKarraSubtotal = (TextView) findViewById(R.id.subtotalKarra);
+        showKirpanSubtotal = (TextView) findViewById(R.id.subtotalKirpan);
+        showPendantSubtotal = (TextView) findViewById(R.id.subtotalPendant);
 
         showKarraCount = (TextView) findViewById(R.id.amountKarra);
         showKirpanCount = (TextView) findViewById(R.id.amountKirpan);

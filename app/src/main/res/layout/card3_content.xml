@@ -12,41 +12,42 @@
             android:id="@+id/decreasePendantButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginStart="48dp"
             android:background="@android:color/white"
+            android:onClick="decreasePendant"
             android:text="@string/minus"
             android:textAlignment="center"
             android:textSize="50sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:onClick="decreasePendant"/>
+            app:layout_constraintBaseline_toBaselineOf="@+id/amountPendant"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/increasePendantButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="112dp"
             android:background="@android:color/white"
+            android:onClick="increasePendant"
             android:text="@string/plus"
             android:textAlignment="center"
             android:textSize="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:onClick="increasePendant"/>
+            app:layout_constraintTop_toBottomOf="@+id/descriptionPendant" />
 
         <ImageView
-            android:id="@+id/imageKarra"
+            android:id="@+id/imagePendant"
             android:layout_width="308dp"
             android:layout_height="215dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/priceKarra"
+            app:layout_constraintTop_toBottomOf="@+id/pricePendant"
             app:srcCompat="@drawable/khanda" />
 
         <TextView
@@ -54,26 +55,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="12dp"
             android:background="@android:color/white"
             android:text="@string/zero"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="50sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/increasePendantButton"
             app:layout_constraintEnd_toStartOf="@+id/increasePendantButton"
             app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toEndOf="@+id/decreasePendantButton"
-            app:layout_constraintTop_toBottomOf="@+id/imageKarra" />
+            app:layout_constraintStart_toEndOf="@+id/decreasePendantButton" />
 
         <TextView
-            android:id="@+id/nameKarra"
+            android:id="@+id/namePendant"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:background="@android:color/white"
             android:text="@string/pendant"
@@ -86,7 +84,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/priceKarra"
+            android:id="@+id/pricePendant"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
@@ -99,7 +97,55 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameKarra" />
+            app:layout_constraintTop_toBottomOf="@+id/namePendant" />
+
+        <TextView
+            android:id="@+id/descriptionPendant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/white"
+            android:text="This Pendant is not a religious item. It is an ornament wit the chrest of the Khalsa.The chain s ajustible"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePendant" />
+
+        <TextView
+            android:id="@+id/strSubtotalPendant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:background="@android:color/white"
+            android:text="Subtotal:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/subtotalPendant"
+            app:layout_constraintEnd_toStartOf="@+id/subtotalPendant"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/subtotalPendant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/strSubtotalPendant"
+            app:layout_constraintTop_toBottomOf="@+id/increasePendantButton"
+            app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>

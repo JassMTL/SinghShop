@@ -9,39 +9,40 @@
     android:background="#F0F0F0">
 
         <Button
-            android:id="@+id/decreasePendantButton"
+            android:id="@+id/decreaseKarraButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginStart="52dp"
             android:background="@android:color/white"
+            android:onClick="decreaseKirpan"
             android:text="@string/minus"
             android:textAlignment="center"
             android:textSize="50sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:onClick="decreaseKirpan"/>
+            app:layout_constraintBaseline_toBaselineOf="@+id/amountKirpan"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/increasePendantButton"
+            android:id="@+id/increaseKarraButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="128dp"
             android:background="@android:color/white"
+            android:onClick="increaseKirpan"
             android:text="@string/plus"
             android:textAlignment="center"
             android:textSize="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:onClick="increaseKirpan"/>
+            app:layout_constraintTop_toBottomOf="@+id/descriptionKirpan" />
 
         <ImageView
             android:id="@+id/imageKarra"
             android:layout_width="308dp"
             android:layout_height="215dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.517"
@@ -54,26 +55,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="12dp"
             android:background="@android:color/white"
             android:text="@string/zero"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="50sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/increasePendantButton"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toEndOf="@+id/decreasePendantButton"
-            app:layout_constraintTop_toBottomOf="@+id/imageKarra" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/increaseKarraButton"
+            app:layout_constraintEnd_toStartOf="@+id/increaseKarraButton"
+            app:layout_constraintHorizontal_bias="0.601"
+            app:layout_constraintStart_toEndOf="@+id/decreaseKarraButton" />
 
         <TextView
             android:id="@+id/nameKarra"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:background="@android:color/white"
             android:text="@string/kirpan"
@@ -100,6 +98,53 @@
             app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameKarra" />
+
+        <TextView
+            android:id="@+id/descriptionKirpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:text="Kirpan is a small dagger worn by baptised Sikh men and women. This particle kirpan is personized with a matt black finish. "
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageKarra" />
+
+        <TextView
+            android:id="@+id/strSubtotalKirpan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:background="@android:color/white"
+            android:text="Subtotal:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/subtotalKirpan"
+            app:layout_constraintEnd_toStartOf="@+id/subtotalKirpan"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/subtotalKirpan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/strSubtotalKirpan"
+            app:layout_constraintTop_toBottomOf="@+id/increaseKarraButton"
+            app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>
