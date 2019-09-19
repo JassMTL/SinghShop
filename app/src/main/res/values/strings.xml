@@ -20,4 +20,5 @@
     <string name="final_amount">Final Amount:</string>
     <string name="thank_you">Thank You For Your Visiting SikhAccesories</string>
     <string name="checkout">Checkout</string>
+    <string name="defaultNum">0</string>
 </resources>
