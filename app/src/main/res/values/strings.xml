@@ -3,12 +3,11 @@
     <string name="pendant">Pendant</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
-    <string name="zero">0</string>
     <string name="sarbloh_karra">Sarbloh Karra</string>
-    <string name="priceKarraStr">$24.99</string>
+    <string name="priceKarraStr">$25.00</string>
     <string name="kirpan">Kirpan</string>
-    <string name="priceKirpanStr">$99.99</string>
-    <string name="pricePendant">19.99</string>
+    <string name="priceKirpanStr">$100.00</string>
+    <string name="pricePendant">$20.00</string>
     <string name="library">Library</string>
     <string name="proceed_to_checkout">Proceed To Checkout</string>
     <string name="welcome_to_sikhaccesories">Welcome to SikhAccesories</string>
