@@ -1,3 +1,8 @@
+/**
+ * Jaspreet Singh
+ * Assgnment 1
+ * Due : September 20th
+ */
 package com.example.singhshop;
 
 import android.content.Intent;
