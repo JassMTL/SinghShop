@@ -17,8 +17,7 @@
             android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.android.singhshop.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
 
         <activity android:name=".MenuActivity"
@@ -27,8 +26,7 @@
             android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.android.singhshop.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
