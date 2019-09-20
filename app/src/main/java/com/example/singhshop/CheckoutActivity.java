@@ -9,11 +9,18 @@ import java.text.DecimalFormat;
 
 public class CheckoutActivity extends AppCompatActivity {
 
+    /**
+     * variables for all the text view
+     */
     private TextView showSubtotal;
     private TextView showGst;
     private TextView showQst;
     private TextView showFinalPrice;
 
+    /**
+     * it receives the information sent from menu activity and calls the method to show the taxes
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +31,12 @@ public class CheckoutActivity extends AppCompatActivity {
         showTax(subtotal);
     }
 
+    /**
+     * links the text view to their respective id
+     * calculates gst qst and final price
+     * formats the output and sets the texts to their respective text view
+     * @param subtotal
+     */
     public void showTax(double subtotal) {
         showSubtotal = (TextView) findViewById(R.id.valBeforeTax);
         showGst = (TextView) findViewById(R.id.valGst);

@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
         //added a comment
     }
 
+    /**
+     * launches the menuActivity
+     * @param view
+     */
     public void launchMenu(View view) {
         //intention to use to activate the secondactily
         Intent intent = new Intent(this, MenuActivity.class);

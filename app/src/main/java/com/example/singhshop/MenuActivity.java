@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 public class MenuActivity extends AppCompatActivity {
 
+    /**
+     * This part contains all the major variables used in the program
+     * including the price of the products, the subtotal, the count and the text views
+     */
     public static final String EXTRA_NUMBER = "com.example.singhshop.EXTRA_NUMBER";
     private final double priceKarra = 25;
     private final double priceKirpan = 100;
@@ -30,7 +34,13 @@ public class MenuActivity extends AppCompatActivity {
     private TextView showKarraSubtotal;
     private TextView showKirpanSubtotal;
     private TextView showPendantSubtotal;
+
+
     @Override
+    /**
+     * it creates the application and links the texviews to their positions
+     *
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
@@ -46,6 +56,11 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @param view
+     * when the increase button is clicked, the count var and view, the grand total, the grand total,
+     * and the views to show the subtotal and grand total are increased by a correct amount
+     */
     public void increaseKarra(View view){
         ++karraCount;
         showKarraCount.setText(Integer.toString(karraCount));
@@ -55,6 +70,11 @@ public class MenuActivity extends AppCompatActivity {
         showTotal.setText(Double.toString(total));
     }
 
+    /**
+     * @param view
+     * when the decreased button is clicked, the count var and view, the grand total, the grand total,
+     * and the views to show the subtotal and grand total are decreased by a correct amount
+     */
     public void decreaseKarra(View view){
         if(karraCount != 0) {
             --karraCount;
@@ -67,6 +87,11 @@ public class MenuActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * @param view
+     * when the increase button is clicked, the count var and view, the grand total, the grand total,
+     * and the views to show the subtotal and grand total are increased by a correct amount
+     */
     public void increaseKirpan(View view){
         ++kirpanCount;
         showKirpanCount.setText(Integer.toString(kirpanCount));
@@ -77,6 +102,11 @@ public class MenuActivity extends AppCompatActivity {
         showTotal.setText(Double.toString(total));
     }
 
+    /**
+     * @param view
+     * when the decreased button is clicked, the count var and view, the grand total, the grand total,
+     * and the views to show the subtotal and grand total are decreased by a correct amount
+     */
     public void decreaseKirpan(View view){
         if(kirpanCount != 0) {
             --kirpanCount;
@@ -88,6 +118,11 @@ public class MenuActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * @param view
+     * when the increase button is clicked, the count var and view, the grand total, the grand total,
+     * and the views to show the subtotal and grand total are increased by a correct amount
+     */
     public void increasePendant(View view){
         ++pendantCount;
         showPendantCount.setText(Integer.toString(pendantCount));
@@ -100,6 +135,11 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @param view
+     * when the decreased button is clicked, the count var and view, the grand total, the grand total,
+     * and the views to show the subtotal and grand total are decreased by a correct amount
+     */
     public void decreasePendant(View view){
         if(pendantCount != 0) {
             --pendantCount;
@@ -113,6 +153,10 @@ public class MenuActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * @param view
+     * sends the grand total to the checkout activity
+     */
     public void checkout(View view) {
         Intent intent = new Intent(this, CheckoutActivity.class);
 
