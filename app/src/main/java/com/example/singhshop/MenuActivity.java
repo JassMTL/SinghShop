@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class MenuActivity extends AppCompatActivity {
 
+    public static final String EXTRA_NUMBER = "com.example.singhshop.EXTRA_NUMBER";
     private final double priceKarra = 25;
     private final double priceKirpan = 100;
     private final double pricePendant = 20;
@@ -114,6 +115,8 @@ public class MenuActivity extends AppCompatActivity {
 
     public void checkout(View view) {
         Intent intent = new Intent(this, CheckoutActivity.class);
+
+        intent.putExtra(EXTRA_NUMBER,total);
         startActivity(intent);
     }
 }
