@@ -25,23 +25,18 @@ public class CheckoutActivity extends AppCompatActivity {
     }
 
     public void showTax(double subtotal) {
-
-        DecimalFormat df = new DecimalFormat("#.##");
         showSubtotal = (TextView) findViewById(R.id.valBeforeTax);
         showGst = (TextView) findViewById(R.id.valGst);
         showQst = (TextView) findViewById(R.id.valQst);
         showFinalPrice = (TextView) findViewById(R.id.valFinal);
 
         double valueGst = subtotal * 0.05;
-        df.format(valueGst);
         double valueQst = subtotal * 0.0975;
-        df.format(valueQst);
         double finalPrice = subtotal + valueGst + valueQst;
-        df.format(finalPrice);
 
-        showSubtotal.setText(Double.toString(subtotal));
-        showGst.setText(Double.toString(valueGst));
-        showQst.setText(Double.toString(valueQst));
-        showFinalPrice.setText(Double.toString(finalPrice));
+        showSubtotal.setText(String.format("$%.2f",subtotal));
+        showGst.setText(String.format("$%.2f",valueGst));
+        showQst.setText(String.format("$%.2f",valueQst));
+        showFinalPrice.setText(String.format("$%.2f",finalPrice));
     }
 }
