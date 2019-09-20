@@ -1,6 +1,9 @@
 # SinghShop
 Assignment 1 android
 
+The emulator I would like you to use is Nexus 5X.
+I made redundant methods. I went to deep before realizing that I could have shorten the code length.
+
 This project revoles around a shopping application. It includes a main page, a menu page and a chekout page. The main page includes a title
 (the name of my application), a description of the application (what it does) and a button that directs you to the menu page. The menu page
 includes 3 parts.It includes a subtotal section which includes a label for the subtotal and the actual subtotal. The second part includes a
