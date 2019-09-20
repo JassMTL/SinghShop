@@ -12,7 +12,7 @@
             android:id="@+id/decreasePendantButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
+            android:layout_marginStart="52dp"
             android:background="@android:color/white"
             android:onClick="decreasePendant"
             android:text="@string/minus"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="48dp"
-            android:layout_marginBottom="112dp"
+            android:layout_marginBottom="12dp"
             android:background="@android:color/white"
             android:onClick="increasePendant"
             android:text="@string/plus"
@@ -35,7 +35,8 @@
             android:textSize="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionPendant" />
+            app:layout_constraintTop_toBottomOf="@+id/descriptionPendant"
+            app:layout_constraintVertical_bias="0.104"/>
 
         <ImageView
             android:id="@+id/imagePendant"
@@ -102,7 +103,7 @@
 
         <TextView
             android:id="@+id/descriptionPendant"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"

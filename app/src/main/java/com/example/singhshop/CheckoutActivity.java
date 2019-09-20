@@ -31,7 +31,7 @@ public class CheckoutActivity extends AppCompatActivity {
         showFinalPrice = (TextView) findViewById(R.id.valFinal);
 
         double valueGst = subtotal * 0.05;
-        double valueQst = subtotal * 0.0975;
+        double valueQst = subtotal * 0.09975;
         double finalPrice = subtotal + valueGst + valueQst;
 
         showSubtotal.setText(String.format("$%.2f",subtotal));
