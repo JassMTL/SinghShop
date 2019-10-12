@@ -2,7 +2,7 @@
 Assignment 1 android
 
 The emulator I would like you to use is Nexus 5X.
-I made redundant methods. I went to deep before realizing that I could have shorten the code length.
+I made redundant methods. I went too deep before realizing that I could have shorten the code length.
 
 This project revoles around a shopping application. It includes a main page, a menu page and a chekout page. The main page includes a title
 (the name of my application), a description of the application (what it does) and a button that directs you to the menu page. The menu page
